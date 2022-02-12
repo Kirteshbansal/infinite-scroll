@@ -1,0 +1,48 @@
+.nav-elem {
+    margin: var(--sizes-2) 0;
+}
+
+.nav-elem__icon {
+    color: var(--bs-gray-500);
+    margin-right: 0.25em;
+}
+
+.nav-elem__icon-el {
+    font-size: var(--fontSizes-2_5xl) !important;
+}
+
+.nav-elem__icon-el--fs-l {
+    font-size: 1.95em !important;
+}
+
+.nav-elem__title {
+    color: var(--bs-gray-700);
+}
+
+.text-linkedin-blue .nav-elem__icon,
+.text-linkedin-blue .nav-elem__title {
+    color: var(--colors-linkedin-blue);
+}
+
+.nav-elem__icon__badge {
+    left: 75%;
+    padding: 0.18em;
+    transform: translate(-35%);
+    -webkit-transform: translate(-35%);
+    -moz-transform: translate(-35%);
+    -ms-transform: translate(-35%);
+    -o-transform: translate(-35%);
+}
+
+.nav-avatar_dropdown-icon {
+    left: 76%;
+    top: 30%;
+    color: var(--colors-linkedin-blue) !important;
+    background-color: var(--bs-white);
+}
+
+@media screen and (min-width: 992px) {
+    .nav-elem {
+        margin: 0;
+    }
+}
