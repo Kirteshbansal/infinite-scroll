@@ -29,10 +29,12 @@ const PeopleRecommendationCard = ({ data = [], cardClasses = "", ...props }) => 
 const RecommendedPeopleCard = ({ name, description, profile_image, ...props }) => {
     return (
         <div className="d-flex align-items-center justify-content-between">
-            <CustomImage roundedCircle src={profile_image.medium} />
+            <CustomImage roundedCircle src={profile_image.medium} classes="avatar-lg14-xl16" />
             <div className="d-flex justify-content-center flex-column flex-fill mx-2">
-                <p className="fw-600 fs-md mb-0">{name}</p>
-                <p className="fs-xs mb-0 text-secondary">{description}</p>
+                <p className="fw-600 fs-lg_sm-xl_md mb-0">{name}</p>
+                <p className="fs-xs mb-0 text-secondary text-truncate">
+                    <span>{description}</span>
+                </p>
             </div>
             <IconClickButton
                 onClickHandler={() => console.log(`Added ${name}`)}

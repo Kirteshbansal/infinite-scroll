@@ -238,8 +238,28 @@ input.input-icon-box__input {
     padding: 0.25rem 0.35rem;
 }
 
+/* avatar */
+
 @media screen and (min-width: 992px) {
     .max-lg-w50 {
         max-width: var(--sizes-50);
+    }
+
+    .avatar-lg14-xl16 {
+        width: var(--sizes-14);
+    }
+
+    .fs-lg_sm-xl_md {
+        font-size: var(--fontSizes-sm);
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .avatar-lg14-xl16 {
+        width: var(--sizes-16);
+    }
+
+    .fs-lg_sm-xl_md {
+        font-size: var(--fontSizes-md);
     }
 }

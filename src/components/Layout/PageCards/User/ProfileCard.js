@@ -17,7 +17,7 @@ const ProfileCard = ({ cardClasses = "", data = {}, ...props }) => {
                     classes="outline-none shadow-none position-absolute top-0 end-0 me-4 mt-4"
                 />
                 <CustomImage src={data.profile_image?.large} roundedCircle classes="d-block mx-auto shadow-sm" />
-                <h5 className="text-center letter-space-1 mt-3">{data.name}</h5>
+                <h5 className="text-center letter-space-1 mt-3 text-truncate">{data.name}</h5>
                 <p className="text-gray-500 fs-sm letter-space-1 text-center">{data.description}</p>
                 <BsCard.Link href="#" className="d-inline-block text-truncate text-decoration-none mb-3">
                     <InsertLinkOutlined className="rotate-135deg text-linkedin-blue fs-5 align-text-top me-2" />
