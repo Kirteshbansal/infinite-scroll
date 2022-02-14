@@ -75,8 +75,8 @@ const Home = ({ ...props }) => {
 
     return (
         <MainLayout
-            rightSideBar={<PeopleRecommendationCard data={recommendationData} cardClasses="position-sticky top-22" />}
-            leftSideBar={<ProfileCard data={profileData} cardClasses="position-sticky top-22" />}
+            rightSideBar={<PeopleRecommendationCard data={recommendationData} cardClasses="position-sticky top-24" />}
+            leftSideBar={<ProfileCard data={profileData} cardClasses="position-sticky top-24" />}
         >
             <div className="d-grid gap-3 mx-md-3 mx-lg-0 mx-xl-2 mx-xxl-3 pb-3 feed-list">
                 <CreatePostCard />

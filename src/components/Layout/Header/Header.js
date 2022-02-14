@@ -57,7 +57,7 @@ const Header = () => {
                     <InputBoxWithIcon
                         val={searchVal}
                         onChangeHandler={(e) => setSearchVal(e.target.value)}
-                        classes="max-lg-w50 ms-lg-auto ms-xl-4 me-lg-3 ps-xl-5 me-xl-4"
+                        classes="max-lg-w50 ms-lg-auto ms-xxl-4 me-lg-3 ps-xl-5 me-xl-4"
                         placeHolder="Search"
                         flushed
                         icon={<SearchIcon />}
