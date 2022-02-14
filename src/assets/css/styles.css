@@ -2,6 +2,7 @@
     --colors-linkedin-blue: #0077b5;
     --colors-transparent: transparent;
     --colors-input-blue: #3182ce;
+    --colors-red-600: #c53030;
     --transition-duration-ultra-fast: 50ms;
     --transition-duration-faster: 100ms;
     --transition-duration-fast: 150ms;
@@ -23,6 +24,7 @@
     --sizes-14: 3.5rem;
     --sizes-16: 4rem;
     --sizes-20: 5rem;
+    --sizes-22: 5.5rem;
     --sizes-24: 6rem;
     --sizes-28: 7rem;
     --sizes-32: 8rem;
@@ -45,6 +47,7 @@
     --fontSizes-2xl: 1.5rem;
     --fontSizes-2_5xl: 1.75rem;
     --fontSizes-3xl: 1.875rem;
+    --fontSizes-3_5xl: 2rem;
     --fontSizes-4xl: 2.25rem;
     --fontSizes-5xl: 3rem;
     --fontSizes-6xl: 3.75rem;
@@ -74,14 +77,118 @@ body {
     color: var(--colors-linkedin-blue);
 }
 
+.text-gray-400 {
+    color: var(--bs-gray-400) !important;
+}
+
+.text-gray-500 {
+    color: var(--bs-gray-500) !important;
+}
+
+.text-gray-800 {
+    color: var(--bs-gray-800) !important;
+}
+
+.text-red-600 {
+    color: var(--colors-red-600);
+}
+
+/* letter spacing */
+.letter-space-1 {
+    letter-spacing: 1px;
+}
+
+/* position */
+.top-22 {
+    top: var(--sizes-22);
+}
+
 /* background color */
 .bg-linkedin-blue {
     background-color: var(--colors-linkedin-blue);
 }
 
+.bg-gray-200 {
+    background-color: var(--bs-gray-200);
+}
+
+.bg-gray-100 {
+    background-color: var(--bs-gray-100);
+}
+
+.bg-gray-500 {
+    background-color: var(--bs-gray-500);
+}
+
+/* scrollBar */
+
+.hide-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+/* outline */
+.outline-none {
+    outline: none;
+}
+
 /* cursor */
 .cursor-pointer {
     cursor: pointer;
+}
+
+/* width */
+
+.max-w-content {
+    max-width: max-content;
+}
+
+/* height */
+.max-h-content {
+    max-height: max-content;
+}
+
+/* resize */
+.resize-inherit {
+    resize: inherit;
+}
+
+/* font weight */
+.fw-500 {
+    font-weight: var(--fontWeights-medium);
+}
+.fw-600 {
+    font-weight: var(--fontWeights-semibold);
+}
+
+/* font-size */
+.fs-xs {
+    font-size: var(--fontSizes-xs) !important;
+}
+
+.fs-sm {
+    font-size: var(--fontSizes-sm) !important;
+}
+
+.fs-md {
+    font-size: var(--fontSizes-md) !important;
+}
+
+.fs-3_5xl {
+    font-size: var(--fontSizes-3_5xl) !important;
+}
+
+/* transform */
+.rotate-135deg {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+    -moz-transform: rotate(135deg);
+    -ms-transform: rotate(135deg);
+    -o-transform: rotate(135deg);
 }
 
 /* Form styles */
@@ -124,6 +231,11 @@ input.input-flushed {
 
 input.input-icon-box__input {
     padding-left: var(--sizes-7);
+}
+
+/* buttons */
+.icon-btn-sm-p {
+    padding: 0.25rem 0.35rem;
 }
 
 @media screen and (min-width: 992px) {
