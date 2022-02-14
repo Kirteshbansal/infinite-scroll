@@ -57,7 +57,7 @@ const Header = () => {
                     <InputBoxWithIcon
                         val={searchVal}
                         onChangeHandler={(e) => setSearchVal(e.target.value)}
-                        classes="max-lg-w50 ms-lg-auto me-lg-3 ps-xl-5"
+                        classes="max-lg-w50 ms-lg-auto ms-xl-4 me-lg-3 ps-xl-5 me-xl-4"
                         placeHolder="Search"
                         flushed
                         icon={<SearchIcon />}
@@ -67,21 +67,33 @@ const Header = () => {
                             icon={<HomeOutlinedIcon className="nav-elem__icon-el nav-elem__icon-el--fs-l" />}
                             title="Home"
                             active
+                            tabIndex="0"
                         />
                         <NavLinkItem icon={<PeopleAltOutlinedIcon className="nav-elem__icon-el " />} title="Network" />
                         <NavLinkItem
                             icon={<ChatBubbleOutlineRoundedIcon className="nav-elem__icon-el" />}
                             title="Messaging"
+                            tabIndex="1"
                         />
                         <NavLinkItem
                             icon={
                                 <NotificationsNoneOutlinedIcon className="nav-elem__icon-el nav-elem__icon-el--fs-l" />
                             }
                             title="Notifications"
+                            tabIndex="2"
                             badge
+                            badgeLabel="Alerts"
                         />
-                        <NavLinkItem icon={<WorkOutlineOutlinedIcon className="nav-elem__icon-el " />} title="Jobs" />
-                        <NavLinkItem icon={<GridOnOutlined className="nav-elem__icon-el" />} title="Home" />
+                        <NavLinkItem
+                            icon={<WorkOutlineOutlinedIcon className="nav-elem__icon-el " />}
+                            title="Jobs"
+                            tabIndex="3"
+                        />
+                        <NavLinkItem
+                            icon={<GridOnOutlined className="nav-elem__icon-el" />}
+                            title="Home"
+                            tabIndex="4"
+                        />
                     </div>
                 </Navbar.Collapse>
             </Container>
